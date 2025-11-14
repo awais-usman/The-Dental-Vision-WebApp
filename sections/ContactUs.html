@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Dental Vision</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container header-top-content">
+                <div class="header-contact">
+                    <a href="tel:+923156547393"><i class="fas fa-phone"></i> +92 315 6547393</a>
+                    <a href="mailto:thedentalvision@gmail.com"><i class="fas fa-envelope"></i> thedentalvision@gmail.com</a>
+                </div>
+                <div class="header-social">
+                    <a href="https://www.instagram.com/thedentalvision.pk/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/p/The-Dental-Vision-61579464736450/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container header-main">
+            <div class="logo">
+                <div class="logo-img">TDV</div>
+                <div class="logo-text">
+                    <h1>The Dental Vision</h1>
+                    <span class="slogan">Smile Care & Implant Center</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="dentists.html">Dentists</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="appointment-btn" id="appointmentBtn">Book Appointment</a>
+                <button class="doctor-login-btn" id="doctorLoginBtn">Doctor Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Contact Us</h1>
+                <p class="section-subtitle">Get in touch with us to schedule your appointment or ask any questions</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <strong>Address</strong>
+                                St. 6, Link 17, Cavalry Ground<br>
+                                Lahore, Pakistan
+                                <a href="https://goo.gl/maps/example" target="_blank" style="color: var(--dark-green); display: block; margin-top: 5px;">View on Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <strong>Phone</strong>
+                                +92 315 6547393<br>
+                                <small>Mon-Sat: 9:00 AM - 7:00 PM</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <strong>Email</strong>
+                                thedentalvision@gmail.com<br>
+                                <small>We respond within 24 hours</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-text">
+                                <strong>Working Hours</strong>
+                                Monday - Saturday: 9:00 AM - 7:00 PM<br>
+                                Sunday: Closed
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/thedentalvision.pk/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/p/The-Dental-Vision-61579464736450/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <div style="width:100%; height:400px; background-color:var(--medium-green); display:flex; align-items:center; justify-content:center; color:white; font-size:1.2rem; border-radius:8px;">
+                        Google Maps Embed<br>
+                        St. 6, Link 17, Cavalry Ground, Lahore
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>How do I book an appointment?</h4>
+                        <p>You can book an appointment by calling us at +92 315 6547393, using the online booking form, or visiting our clinic during working hours.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What are your working hours?</h4>
+                        <p>We are open Monday through Saturday from 9:00 AM to 7:00 PM. We are closed on Sundays.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you accept dental insurance?</h4>
+                        <p>Please contact us directly to discuss insurance options and coverage details for your specific plan.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What should I bring to my first appointment?</h4>
+                        <p>Please bring your ID, any dental insurance information, and a list of current medications or medical conditions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you offer emergency dental services?</h4>
+                        <p>Yes, we provide emergency dental care. Please call us immediately if you have a dental emergency.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How can I pay for my treatment?</h4>
+                        <p>We accept cash, credit cards, and bank transfers. Payment plans may be available for certain treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>The Dental Vision</h3>
+                    <p>Your smile, our vision. We are committed to providing exceptional dental care in a comfortable and welcoming environment.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="dentists.html">Our Dentists</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Smile Makeovers</a></li>
+                        <li><a href="services.html">Preventive Care</a></li>
+                        <li><a href="services.html">Restorative Care</a></li>
+                        <li><a href="services.html">Cosmetic Dentistry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>St. 6, Link 17, Cavalry Ground</li>
+                        <li>+92 315 6547393</li>
+                        <li>thedentalvision@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 The Dental Vision - Smile Care & Implant Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals (same as index.html) -->
+    <div class="modal" id="appointmentModal">
+        <!-- Same as index.html -->
+    </div>
+
+    <div class="modal" id="doctorLoginModal">
+        <!-- Same as index.html -->
+    </div>
+
+    <!-- Doctor Portal (same as index.html) -->
+    <div class="doctor-portal" id="doctorPortal">
+        <!-- Same as index.html -->
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
