@@ -1,0 +1,16 @@
+// Disable Sundays in appointment date picker
+const appointmentDate = document.getElementById('appointmentDate');
+if (appointmentDate) {
+    const today = new Date().toISOString().split('T')[0];
+    appointmentDate.min = today;
+    
+    appointmentDate.addEventListener('input', function() {
+        const selectedDate = new Date(this.value);
+        const dayOfWeek = selectedDate.getDay();
+        
+        if (dayOfWeek === 0) { // Sunday
+            alert('Sundays are off. Please select another day.');
+            this.value = '';
+        }
+    });
+}
