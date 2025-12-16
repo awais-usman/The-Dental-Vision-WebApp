@@ -1,0 +1,40 @@
+// Patient: Register a new account
+const registerForm = document.getElementById('registerForm');
+
+function getUsers() {
+    const data = localStorage.getItem('users');
+    return data ? JSON.parse(data) : [];
+}
+
+function saveUsers(users) {
+    localStorage.setItem('users', JSON.stringify(users));
+}
+
+if (registerForm) {
+    registerForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('regName').value.trim();
+        const email = document.getElementById('regEmail').value.trim();
+        const password = document.getElementById('regPassword').value;
+
+        const users = getUsers();
+        const exists = users.some(u => u.email === email);
+
+        if (exists) {
+            alert('Account already exists with this email.');
+            return;
+        }
+
+        users.push({
+            name,
+            email,
+            password,
+            role: 'patient'
+        });
+
+        saveUsers(users);
+        alert('Registration successful! You can now book appointments.');
+        registerForm.reset();
+    });
+}
