@@ -1,0 +1,28 @@
+// Doctor: View upcoming appointments
+const viewScheduleBtn = document.getElementById('viewScheduleBtn');
+const scheduleContainer = document.getElementById('scheduleContainer');
+
+// Fetch appointments from local storage (set during booking)
+function getUpcomingAppointments() {
+    const data = localStorage.getItem('appointments');
+    return data ? JSON.parse(data) : [];
+}
+
+if (viewScheduleBtn) {
+    viewScheduleBtn.addEventListener('click', function () {
+        const appointments = getUpcomingAppointments();
+        scheduleContainer.innerHTML = '';
+
+        if (appointments.length === 0) {
+            scheduleContainer.innerText = 'No upcoming appointments.';
+            return;
+        }
+
+        appointments.forEach(app => {
+            const item = document.createElement('div');
+            item.classList.add('appointment-item');
+            item.innerText = `${app.date} | ${app.time}`;
+            scheduleContainer.appendChild(item);
+        });
+    });
+}
