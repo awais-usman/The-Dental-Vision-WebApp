@@ -1,0 +1,17 @@
+// Admin: Check patient payment status
+const paymentStatusBtns = document.querySelectorAll('.check-payment-btn');
+
+const mockPayments = {
+    P001: 'Paid',
+    P002: 'Pending',
+    P003: 'Unpaid'
+};
+
+paymentStatusBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+        const patientId = this.getAttribute('data-patient-id');
+        const status = mockPayments[patientId] || 'Unknown';
+
+        alert(`Payment Status for Patient ${patientId}: ${status}`);
+    });
+});
