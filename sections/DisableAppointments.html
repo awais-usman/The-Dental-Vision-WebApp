@@ -1,0 +1,24 @@
+// Admin: Enable / Disable appointment booking
+const toggleBookingBtn = document.getElementById('toggleBookingBtn');
+const bookingStatusText = document.getElementById('bookingStatusText');
+
+function isBookingDisabled() {
+    return localStorage.getItem('bookingDisabled') === 'true';
+}
+
+function updateBookingStatus() {
+    const disabled = isBookingDisabled();
+    bookingStatusText.innerText = disabled
+        ? 'Appointment booking is currently disabled.'
+        : 'Appointment booking is currently enabled.';
+}
+
+if (toggleBookingBtn) {
+    toggleBookingBtn.addEventListener('click', function () {
+        const currentStatus = isBookingDisabled();
+        localStorage.setItem('bookingDisabled', !currentStatus);
+        updateBookingStatus();
+    });
+}
+
+updateBookingStatus();
